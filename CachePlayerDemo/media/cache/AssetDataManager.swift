@@ -36,11 +36,7 @@ class PINCacheAssetDataManager: NSObject, AssetDataManager {
         self.cacheKey = cacheKey
         super.init()
     }
-    
-    static func setCache() {
-        
-    }
-    
+
     func saveContentInformation(_ contentInformation: AssetDataContentInformation) {
         let assetData = AssetData()
         assetData.contentInformation = contentInformation
