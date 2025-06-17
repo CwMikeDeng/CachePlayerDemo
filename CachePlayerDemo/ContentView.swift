@@ -20,7 +20,7 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-            if let url = URL(string: "https://dev-storyapp-cwkids-gcs.parenting.com.tw/stories/cW6Sbrt46Q3JOACO9t10xNA5lxbfZoCW33T0veO6.mp3") {
+            if let url = URL(string: "SamplePlayableUrl") {
                 if CachingAVURLAsset.isSchemeSupport(url) {
                     let asset = CachingAVURLAsset(url: url)
                     let playItem = AVPlayerItem(asset: asset)
